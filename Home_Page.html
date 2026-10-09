@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename='home_page.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vaultify - Secure Web Password Manager</title>
+  <meta name="description" content="Vaultify is a secure, end-to-end encrypted password manager built with Python and Flask. Safely store, search, and manage all your digital credentials in one place.">
+  <meta name="author" content="Harshvardhan">
+  <meta name="keywords" content="Vaultify, Password Manager, Python Flask Vault, Secure Password Storage, Encrypted Credentials">
+</head>
+
+<body>
+  <h2>Vaultify - Password Manager🔒</h2>
+  <h3>Home🏠</h3>
+  <p1>👤</p1>
+  <p2>username: {{username}}</p2>
+  <p3>E-mail: {{email}}</p3>
+  <p>Easily organize your digital identity. Add new passwords, search existing records, and keep your accounts updated—all backed by end-to-end encryption.</p>
+<nav>
+  <h5>Features🖇️</h5>
+  <ul>
+    <li>Add New Password - <a href="/add_pass">Add➕</a></li>
+    <li>All Saved Passwords - <a href="/view_pass">View👁️</a></li>
+    <li>Find a Password - <a href="/search_pass">Search🔍</a></li>
+    <li>Delete Passwords - <a href="/delete_pass">Delete🗑️</a></li>
+    <li>Update Password - <a href="/update_pass">Update🆙</a></li>
+    <li>Close Session - <a href="/logout">Logout🔐</a></li>
+  </ul>
+  <div class="about_security">
+  <h5 class="heading">Security and Privacy • </h5>
+  <p4>Your data is fully encrypted and stored securely. Only you have access to your saved passwords and personal information.</p4>
+  </div>
+</nav> 
+ <p class="creater">Vaultify - Created by Harshvardhan Chauhan</p> 
+</body>
+
+</html>

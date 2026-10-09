@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename='signup.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up - Vaultify Password Manager</title>
+  <meta name="description" content="Create a new account on Vaultify to start storing and encrypting your personal credentials with advanced security features.">
+  <meta name="author" content="Harshvardhan">
+</head>
+
+<body>
+  <h2>Welcome to SignUp Page</h2>
+  {% if errors %}
+  <p style="color: red; font-size: 13px; text-align: center; margin-bottom: 10px;">{{ errors }}</p>
+{% endif %}
+
+  <form action="/signup" method="POST">
+    <label for="username">Username 👤</label>
+    <input type="text" name="username" id="username" placeholder="Create Your Username" required>
+    <label for="email">E-Mail 📧</label>
+    <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required>
+    <label for="password">Password 🔒</label>
+    <input type="password" name="password" id="password" placeholder="Create Your Password" required>
+    <button type="submit">Sign Up</button>
+    <p>Already have an account
+    <a href="/">Sign In</a></p>
+  </form>
+ <p class="creater">Vaultify - Created by Harshvardhan Chauhan</p>
+  
+</body>
+
+</html>

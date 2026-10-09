@@ -1,0 +1,135 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2{
+  font-size: 18px;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #FAF9F6;
+  color: #34282C;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+form{
+  background-color: #FAF9F6;
+  padding: 30px 20px;
+  border-radius: 50px;
+  border: 2px solid #FAF9F6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 340px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+label{
+  display: block;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #444444;
+  white-space: nowrap;
+}
+
+label[for="username"]{
+  margin-top: 10px;
+}
+
+label[for="email"]{
+  margin-top: 10px;
+}
+
+label[for="password"]{
+  margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #CBD5E1;
+  background-color: #ffffff;
+  border-radius: 10px 14px;
+  box-sizing: border-box;
+  outline: black;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+  border-color: black;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px rgba(76, 144, 226, 0.2);
+  color: #0F172A;
+}
+
+input::placeholder{
+  color: #888888;
+  font-size: 12px;
+  font-style: italic;
+  opacity: 1;
+}
+
+button{
+  padding: 10px;
+  width: 100%;
+  background-color: lightgreen;
+  color: #ffffff;
+  border-radius: 10px 12px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+button:hover{
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: green;
+}
+
+a{
+  padding: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: royalblue;
+  transition: all 0.2s ease;
+}
+
+a:hover{
+  color: darkblue;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+p{
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+ 
+.creater{
+  font-size: 12px;
+  color: #34282C;
+  width: auto;
+}
