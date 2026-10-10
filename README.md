@@ -1,1 +1,0 @@
-# Vaultify---Secured-Password-Manager
